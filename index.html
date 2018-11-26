@@ -7,13 +7,16 @@
   <script type="text/javascript">
      $(document).ready(function(){
         $("#hello").click(function(){
-          $("#hello").fadeOut("normal");
+          $("#hello").fadeOut("slow");
         });
        $("#hello").mouseover(function(){
           $("#hello").css("color", "red");
         });
     });
   </script>
+  <style>
+    #hello { font-size:150%; cursor:pointer; }
+  </style>
 </head>
 <body>
   <div id="hello">こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br></div>
