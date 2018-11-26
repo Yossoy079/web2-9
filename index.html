@@ -6,15 +6,14 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.mix.js"></script>
   <script type="text/javascript">
     $function(){
-        $("#toggle").on("click", function(){
+        $("#toggle").mouseover(function(){
           $("#target").fadeToggle("slow");
-          $("#target").css("color", "red");
         });
     });
   </script>
 </head>
 <body>
   <div id="target">こんちわ</div>
-  <button id="toggle">押してみ</button>
+  <button id="toggle">こんちわ～</button>
 </body>
 </html>
