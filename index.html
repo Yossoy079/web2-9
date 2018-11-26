@@ -10,23 +10,23 @@
           $("#hello").fadeOut("slow");
         });
        $("#toggleButton").click(function(){
-          $("#hello").toggle("slow");
+          $("#hello").toggle("fast");
         });
        $("#colorChangeButton").click(function(){
           $("#hello").css("color", "red");
     });
   </script>
   <style>
-    #hello { font-size:150%; cursor:pointer; }
+    #hello { font-size:150%; }
   </style>
 </head>
 <body>
   <div id="hello">こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br></div>
-<div id="hello" style="display: none">おやすみ～</br>おやすみ～</br>おやすみ～</br>おやすみ～</br>おやすみ～</br></div>
-<button id="colorChangeButton">色を変えようの巻</button>
-</br>
-<button id="toggleButton">ねようの巻</button>
-</br>
-<button id="fadeOutButton">さよなら～</button>
+  <div id="hello" style="display: none">おやすみ～</br>おやすみ～</br>おやすみ～</br>おやすみ～</br>おやすみ～</br></div>
+  <button id="colorChangeButton">色を変えようの巻</button>
+  </br>
+  <button id="toggleButton">ねようの巻</button>
+  </br>
+  <button id="fadeOutButton">さよなら～</button>
 </body>
 </html>
