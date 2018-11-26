@@ -6,11 +6,14 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.mix.js"></script>
   <script type="text/javascript">
     $function(){
-      &("p").css("color","red");
+        $("#hover").on("hover", function(){
+          &("#target").fadeToggle("slow");
+        });
     });
   </script>
 </head>
 <body>
-  <p>てすと</p>
+  <div id="target">こんちわ</div>
+  <div id="hober">マウス触れてみ</div>
 </body>
 </html>
