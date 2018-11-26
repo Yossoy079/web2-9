@@ -6,12 +6,14 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
      $(document).ready(function(){
-        $("#hello").click(function(){
+        $("#fadeOutButton").click(function(){
           $("#hello").fadeOut("slow");
         });
-       $("#hello").mouseover(function(){
-          $("#hello").css("color", "red");
+       $("#toggleButton").click(function(){
+          $("#hello").toggle("slow");
         });
+       $("#colorChangeButton").click(function(){
+          $("#hello").css("color", "red");
     });
   </script>
   <style>
@@ -20,5 +22,11 @@
 </head>
 <body>
   <div id="hello">こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br></div>
+<div id="hello" style="display: none">おやすみ～</br>おやすみ～</br>おやすみ～</br>おやすみ～</br>おやすみ～</br></div>
+<button id="colorChangeButton">色を変えようの巻</button>
+</br>
+<button id="toggleButton">ねようの巻</button>
+</br>
+<button id="fadeOutButton">さよなら～</button>
 </body>
 </html>
