@@ -6,13 +6,16 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
      $(document).ready(function(){
-        $("#kieru").click(function(){
-          $("#kieru").fadeOut("normal");
+        $("#hello").click(function(){
+          $("#hello").fadeOut("normal");
+        });
+       $("#hello").mouseover(function(){
+          $("#hello").css("color", "red");
         });
     });
   </script>
 </head>
 <body>
-  <div id="kieru">こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</div>
+  <div id="hello">こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br>こんちわ～</br></div>
 </body>
 </html>
